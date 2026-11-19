@@ -1,1 +1,130 @@
+>>> TEST CASE 1: CHEAPEST ROUTE (City A to City F) <<<
+Goal: plan_travel(city_a, city_f, cheapest).
+==================================================
+           INTELLIGENT TRAVEL PLANNER             
+==================================================
+Source: City A
+Destination: City F
+Preference: Cheapest Route
+Recommended Route: City A -> City B -> City F
+Total Cost: Rs. 850
+Estimated Travel Time: 6 hours
+Total Distance: 350 km
+Reason: This route has the lowest total cost among the available routes.
+==================================================
 
+>>> TEST CASE 2: FASTEST ROUTE (City A to City F) <<<
+Goal: plan_travel(city_a, city_f, fastest).
+==================================================
+           INTELLIGENT TRAVEL PLANNER             
+==================================================
+Source: City A
+Destination: City F
+Preference: Fastest Route
+Recommended Route: City A -> City D -> City F
+Total Cost: Rs. 1400
+Estimated Travel Time: 3 hours
+Total Distance: 340 km
+Reason: This route has the lowest travel time among the available routes.
+==================================================
+
+>>> TEST CASE 3: SHORTEST ROUTE (City A to City F) <<<
+Goal: plan_travel(city_a, city_f, shortest).
+==================================================
+           INTELLIGENT TRAVEL PLANNER             
+==================================================
+Source: City A
+Destination: City F
+Preference: Shortest Route
+Recommended Route: City A -> City E -> City F
+Total Cost: Rs. 950
+Estimated Travel Time: 8 hours
+Total Distance: 260 km
+Reason: This route has the shortest distance among the available routes.
+==================================================
+
+>>> ADDITIONAL CHALLENGE 1: AVOID SPECIFIED CITY (Avoid City B) <<<
+Goal: plan_travel_avoid(city_a, city_f, cheapest, city_b).
+--> Route planning while avoiding: City B
+==================================================
+           INTELLIGENT TRAVEL PLANNER             
+==================================================
+Source: City A
+Destination: City F
+Preference: Cheapest Route
+Recommended Route: City A -> City E -> City F
+Total Cost: Rs. 950
+Estimated Travel Time: 8 hours
+Total Distance: 260 km
+Reason: This route has the lowest total cost among the available routes.
+==================================================
+
+>>> ADDITIONAL CHALLENGE 2: HANDLE UNAVAILABLE CONNECTION (Block City A - City B) <<<
+Goal: plan_travel_block(city_a, city_f, cheapest, city_a, city_b).
+--> Connection blocked between City A and City B
+==================================================
+           INTELLIGENT TRAVEL PLANNER             
+==================================================
+Source: City A
+Destination: City F
+Preference: Cheapest Route
+Recommended Route: City A -> City E -> City F
+Total Cost: Rs. 950
+Estimated Travel Time: 8 hours
+Total Distance: 260 km
+Reason: This route has the lowest total cost among the available routes.
+==================================================
+
+>>> ADDITIONAL CHALLENGE 3: COMPARE CHEAPEST vs FASTEST ROUTE <<<
+Goal: compare_cheapest_fastest(city_a, city_f).
+==================================================
+      ROUTE COMPARISON: CHEAPEST vs FASTEST       
+==================================================
+==================================================
+           INTELLIGENT TRAVEL PLANNER             
+==================================================
+Source: City A
+Destination: City F
+Preference: Cheapest Route
+Recommended Route: City A -> City B -> City F
+Total Cost: Rs. 850
+Estimated Travel Time: 6 hours
+Total Distance: 350 km
+Reason: This route has the lowest total cost among the available routes.
+==================================================
+==================================================
+           INTELLIGENT TRAVEL PLANNER             
+==================================================
+Source: City A
+Destination: City F
+Preference: Fastest Route
+Recommended Route: City A -> City D -> City F
+Total Cost: Rs. 1400
+Estimated Travel Time: 3 hours
+Total Distance: 340 km
+Reason: This route has the lowest travel time among the available routes.
+==================================================
+--- TRADE-OFF ANALYSIS ---
+Fastest route saves: 3 hours of travel time.
+Cheapest route saves: Rs. 550 in travel budget.
+Decision Rule: Choose Fastest if time is critical; choose Cheapest for budget travel.
+==================================================
+
+>>> ADDITIONAL CHALLENGE 4: DISPLAY ALL CANDIDATE ROUTES (Sample Subset) <<<
+Goal: show_all_routes(city_a, city_f).
+==================================================
+         ALL AVAILABLE CANDIDATE ROUTES           
+==================================================
+Route: City A -> City B -> City F
+       Distance: 350 km | Time: 6 hrs | Cost: Rs. 850
+Route: City A -> City E -> City F
+       Distance: 260 km | Time: 8 hrs | Cost: Rs. 950
+Route: City A -> City C -> City F
+       Distance: 320 km | Time: 5 hrs | Cost: Rs. 1100
+Route: City A -> City D -> City F
+       Distance: 340 km | Time: 3 hrs | Cost: Rs. 1400
+Route: City A -> City B -> City E -> City F
+       Distance: 380 km | Time: 9 hrs | Cost: Rs. 1050
+Route: City A -> City B -> City C -> City F
+       Distance: 380 km | Time: 7 hrs | Cost: Rs. 1100
+==================================================
