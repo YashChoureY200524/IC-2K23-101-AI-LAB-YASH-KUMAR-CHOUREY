@@ -36,6 +36,9 @@ The network contains six cities: **City A, City B, City C, City D, City E, and C
 
 ### Connection data
 
+<img width="927" height="395" alt="image" src="https://github.com/user-attachments/assets/c03dddc3-a43f-4b5e-8aab-6d19ed5facaa" />
+
+
 | Edge | Connection | Distance (km) | Time (hours) | Cost (Rs.) |
 |---:|---|---:|---:|---:|
 | 1 | City A — City B | 100 | 2 | 250 |
