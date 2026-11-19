@@ -1,6 +1,10 @@
 # Intelligent Travel Planner in Prolog
 
-> **Lab Test 2 | Set 9 | Roll Numbers 90 onwards**  
+## Demo Video
+
+
+
+> **Lab Test 2 | Set 9 **  
 > A Prolog-based route planner that recommends the **cheapest**, **fastest**, or **shortest** route between two cities in a road network.
 
 ## Overview
@@ -248,9 +252,6 @@ intelligent-travel-planner/
 - DFS may explore many simple paths as the network becomes larger.
 - Future versions could accept interactive input, avoid specified cities, display multiple alternative routes, or load road data from a file.
 
-## Demo Video
-
-[**Watch the Intelligent Travel Planner demonstration**](https://drive.google.com/file/d/1zxvGUfqxVbmjFaU0o3wT4Ch9QgaHGtiQ/view?usp=sharing)
 
 ## Conclusion
 
@@ -261,4 +262,4 @@ The Intelligent Travel Planner demonstrates how Prolog can solve a graph-search 
 **Lab Test:** 2  
 **Set:** 9 — Intelligent Travel Planner  
 **Programming Language:** Prolog  
-**Roll Number:** 90 onwards
+**Roll Number:** 101
