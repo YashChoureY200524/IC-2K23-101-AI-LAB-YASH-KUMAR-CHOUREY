@@ -1,13 +1,12 @@
 # Intelligent Travel Planner in Prolog
 
-## Demo Video
+## Demo Video - 
+https://drive.google.com/file/d/1q9HG0-xSkAIlOACPl__VJ_a_OFIdxgcZ/view?usp=sharing
 
-
+## Overview
 
 > **Lab Test 2 | Set 9 **  
 > A Prolog-based route planner that recommends the **cheapest**, **fastest**, or **shortest** route between two cities in a road network.
-
-## Overview
 
 The Intelligent Travel Planner represents a road network as a graph. Each city is a node, and each direct road connection is an edge containing its distance, travel time, and travel cost. Given a source city, destination city, and travel preference, the program searches available paths, calculates their totals, and recommends the best route.
 
